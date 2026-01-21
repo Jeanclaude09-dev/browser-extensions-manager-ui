@@ -1,67 +1,26 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import Header from "./component/header";
+import Extensions from "./component/extensions";
 
 function App() {
   return (
-    <>
-      {/* <!-- Extensions List
-
-  All
-  Active
-  Inactive --> */}
-
-      {/* <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
-
-  <!-- DevLens
-  Quickly inspect page layouts and visualize element boundaries.
-  Remove
-
-  StyleSpy
-  Instantly analyze and copy CSS from any webpage element.
-  Remove
-
-  SpeedBoost
-  Optimizes browser resource usage to accelerate page loading.
-  Remove
-
-  JSONWizard
-  Formats, validates, and prettifies JSON responses in-browser.
-  Remove
-
-  TabMaster Pro
-  Organizes browser tabs into groups and sessions.
-  Remove
-
-  ViewportBuddy
-  Simulates various screen resolutions directly within the browser.
-  Remove
-
-  Markup Notes
-  Enables annotation and notes directly onto webpages for collaborative debugging.
-  Remove
-
-  GridGuides
-  Overlay customizable grids and alignment guides on any webpage.
-  Remove
-
-  Palette Picker
-  Instantly extracts color palettes from any webpage.
-  Remove
-
-  LinkChecker
-  Scans and highlights broken links on any page.
-  Remove
-
-  DOM Snapshot
-  Capture and export DOM structures quickly.
-  Remove
-
-  ConsolePlus
-  Enhanced developer console with advanced filtering and logging.
-  Remove --> */}
-    </>
+    <main className="min-h-screen bg-neutral-200 px-12 py-8 font-noto">
+      <Header />
+      <section className="flex justify-between items-center mt-4">
+        <h1 className="text-3xl font-bold">Extensions List</h1>
+        <div className="flex gap-1">
+          <button className="bg-neutral-0 px-5 py-2.5 text-lg rounded-3xl cursor-pointer">
+            All
+          </button>
+          <button className="bg-neutral-0 px-5 py-2.5 text-lg rounded-3xl cursor-pointer">
+            Active
+          </button>
+          <button className="bg-neutral-0 px-5 py-2.5 text-lg rounded-3xl cursor-pointer">
+            Inactive
+          </button>
+        </div>
+      </section>
+      <Extensions />
+    </main>
   );
 }
 
