@@ -20,7 +20,7 @@
 
   /* Gradient */
   --color-light-gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
-  --color-ark-gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+  --color-dark-gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
 
   /*  ====== TYPOGRAPHY ====== */
   --font-base: 16px;
