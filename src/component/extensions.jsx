@@ -1,8 +1,6 @@
 import { useState } from "react";
 import itemsData from "../data/data.json";
 
-const [toggled, setToggled] = useState(item.isActive);
-
 function Extensions() {
   return (
     <section className="grid grid-cols-3 gap-3 mt-5">
@@ -21,12 +19,7 @@ function Extensions() {
             <button className="text-neutral-900 px-3 py-1.5 rounded-2xl border border-neutral-500 cursor-pointer hover:bg-red-500 hover:text-neutral-0 hover:border-red-500 focus:bg-neutral-0 focus:border-red-500 focus:text-neutral-900 transition-all duration-200 ">
               Remove
             </button>
-            <button
-              className={`toggle-btn ${toggled ? "toggled" : ""}`}
-              onClick={() => setToggled(!toggled)}
-            >
-              <div className="thumb"></div>
-            </button>
+            <input type="checkbox" name="" id="" />
           </div>
         </article>
       ))}

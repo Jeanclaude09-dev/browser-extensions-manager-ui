@@ -11,7 +11,7 @@ function Header() {
           <img src={moonIcon} alt="dark mode icon" />
         </button>
         <button className="cursor-pointer">
-          <img src={sunIcon} alt="light mode icon" />
+          <img src={sunIcon} alt="light mode icon hidden" />
         </button>
       </div>
     </nav>
