@@ -1,34 +1,6 @@
-import Header from "./component/header";
-import Extensions from "./component/extensions";
+import Header from "./components/header";
+import Extensions from "./components/extensions";
 import { useState } from "react";
-
-const getInitialTheme = () => {
-  // get the theme the user used last (I'm desperate, React is so hard)
-  const saved = localStorage.getItem("theme");
-  if (saved) return saved;
-
-  // Then check system preference
-  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    return "dark";
-  }
-
-  return "light";
-};
-
-// the variable that will save the theme or using light as default (crazy that people use light mode)
-const [theme, setTheme] = useState(getInitialTheme);
-
-useEffect(() => {
-  const root = document.documentElement;
-
-  if (theme === "dark") {
-    root.classList.add("dark");
-  } else {
-    root.classList.remove("dark");
-  }
-
-  localStorage.setItem("theme", theme);
-}, [theme]);
 
 function App() {
   return (
