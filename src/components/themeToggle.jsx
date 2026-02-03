@@ -8,9 +8,9 @@ const ThemeToggle = () => {
   return (
     <button onClick={toggleDarkMode}>
       <img
-        src={darkMode ? moonIcon : sunIcon}
+        src={darkMode ? sunIcon : moonIcon}
         alt={darkMode ? "Switch to light mode" : "Switch to dark mode"}
-        className="bg-neutral-300 p-2 rounded-lg cursor-pointer dark:bg-neutral-800"
+        className="bg-neutral-300 p-2 rounded-lg cursor-pointer dark:bg-neutral-700"
       />
     </button>
   );

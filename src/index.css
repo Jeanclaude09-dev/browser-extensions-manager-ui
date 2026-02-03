@@ -41,30 +41,7 @@
   src: url(assets/fonts/NotoSans-VariableFont_wdth\,wght.ttf);
 }
 
-.toggle-btn {
-  background-color: hsl(3, 77%, 44%);
-  border: 1px solid hsl(3, 77%, 44%);
-  width: 20px;
-  height: 8px;
-  transition:
-    background-color 0.1s ease,
-    border 0.2s ease;
-  cursor: pointer;
-  position: relative;
-}
-
-.toggle-btn .thumb {
-  position: absolute;
-  height: 8px;
-  width: 8px;
-  border-radius: 50%;
-  background-color: hsl(200, 60%, 99%);
-  transform: translateX(0);
-  transition: left 0.15s ease;
-}
-
 .attribution {
-  background-color: hsl(217, 61%, 90%);
   font-size: 11px;
   text-align: center;
 }
