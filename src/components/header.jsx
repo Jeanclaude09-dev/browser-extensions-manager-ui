@@ -1,7 +1,7 @@
 import logo from "../assets/images/logo.svg";
 import ThemeToggle from "./themeToggle";
 
-function Header() {
+export default function Header() {
   return (
     <nav className="bg-neutral-0 flex justify-between items-center p-4 rounded-2xl shadow-xs dark:bg-neutral-800">
       <img
@@ -13,5 +13,3 @@ function Header() {
     </nav>
   );
 }
-
-export default Header;
