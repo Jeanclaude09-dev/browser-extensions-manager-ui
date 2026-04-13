@@ -15,6 +15,14 @@ function App() {
     return true;
   });
 
+  const emptyMessage = {
+    all: "No extensions found",
+    active: "No active extensions",
+    inactive: "No inactive extensions",
+  }
+
+
+
   return (
     <main className="min-h-screen bg-neutral-200 px-12 py-8 font-noto dark:bg-dark-gradient">
       <Header />
@@ -58,7 +66,11 @@ function App() {
         </div>
       </section>
 
-      <Extensions data={filteredData} />
+      {filteredData.length === 0 ?
+        emptyMessage[filter] : <Extensions data={filteredData} />
+      }
+
+
 
       <footer className="attribution">
         Challenge by{" "}
