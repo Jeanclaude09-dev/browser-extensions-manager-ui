@@ -2,7 +2,6 @@ import Header from "./components/header";
 import Extensions from "./components/extensions";
 import "./index.css";
 import { useApp } from "./context/appContext";
-import db from "./data/data.json";
 import { useState } from "react";
 
 function App() {
