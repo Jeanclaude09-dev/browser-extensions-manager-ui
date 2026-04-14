@@ -3,6 +3,7 @@ import Extensions from "./components/extensions";
 import "./index.css";
 import { useApp } from "./context/appContext";
 import { useState } from "react";
+import { SearchAlert } from "lucide-react";
 
 function App() {
   const { data } = useApp();
@@ -67,22 +68,16 @@ function App() {
       </section>
 
       {filteredData.length === 0 ?
-        <div className="flex flex-col items-center justify-center py-20 gap-3 text-center">
-          <div className="w-18 h-18 rounded-2xl border border-neutral-300 dark:border-neutral-600 bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center mb-2">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-              <rect x="5" y="4" width="20" height="26" rx="3" stroke="currentColor" strokeWidth="1.5" className="text-neutral-400" />
-              <path d="M9 10h12M9 15h12M9 20h7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="text-neutral-400" />
-              <circle cx="27" cy="27" r="5" stroke="currentColor" strokeWidth="1.5" className="text-neutral-400" />
-              <path d="M30.5 30.5l2.5 2.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="text-neutral-400" />
-            </svg>
+        <div className="min-w-72 flex flex-col items-center justify-center py-20 gap-3 text-center ">
+          <div className="p-4 bg-neutral-0 flex flex-col items-center rounded-lg dark:bg-neutral-800">
+            <SearchAlert size={52} className="text-neutral-900 dark:text-neutral-0 mb-2" />
+            <p className="text-2xl font-semibold text-neutral-900 dark:text-neutral-0">{emptyMessage[filter]}</p>
+            <p className="text-lg text-neutral-500 dark:text-neutral-400">Try a different filter</p>
           </div>
-          <p className="text-lg font-semibold text-neutral-900 dark:text-neutral-0">{emptyMessage[filter]}</p>
-          <p className="text-sm text-neutral-500 dark:text-neutral-400">Try a different filter</p>
         </div> :
 
         <Extensions data={filteredData} />
       }
-
 
 
       <footer className="attribution">
