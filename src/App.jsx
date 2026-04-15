@@ -25,13 +25,13 @@ function App() {
 
 
   return (
-    <main className="min-h-screen bg-neutral-200 px-12 py-8 font-noto dark:bg-dark-gradient">
+    <main className="min-h-screen bg-neutral-200 px-12 py-8 font-noto dark:bg-dark-gradient max-sm:px-6 max-sm:py-4 max-lg:px-8 max-lg:py-6">
       <Header />
 
-      <section className="flex justify-between items-center mt-4">
+      <section className="flex justify-between items-center mt-4 max-sm:flex-col max-sm:gap-1">
         <h1 className="text-3xl font-bold">Extensions List</h1>
 
-        <div className="flex gap-1">
+        <div className="flex gap-1 max-sm:gap-4">
           <button
             onClick={() => setFilter("all")}
             className={
@@ -67,16 +67,15 @@ function App() {
         </div>
       </section>
 
-      {filteredData.length === 0 ?
-        <div className="min-w-72 flex flex-col items-center justify-center py-20 gap-3 text-center ">
+      {filteredData.length === 0
+        ? <div className="flex items-center justify-center py-20 gap-3 text-center ">
           <div className="p-4 bg-neutral-0 flex flex-col items-center rounded-lg dark:bg-neutral-800">
             <SearchAlert size={52} className="text-neutral-900 dark:text-neutral-0 mb-2" />
             <p className="text-2xl font-semibold text-neutral-900 dark:text-neutral-0">{emptyMessage[filter]}</p>
             <p className="text-lg text-neutral-500 dark:text-neutral-400">Try a different filter</p>
           </div>
-        </div> :
-
-        <Extensions data={filteredData} />
+        </div>
+        : <Extensions data={filteredData} />
       }
 
 

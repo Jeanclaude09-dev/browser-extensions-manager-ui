@@ -17,7 +17,7 @@ function Extensions({ data }) {
   };
 
   return (
-    <section className="grid grid-cols-3 gap-3 mt-5 mb-5">
+    <section className="grid grid-cols-3 gap-3 mt-5 mb-5 max-sm:grid-cols-1 max-lg:grid-cols-2 ">
       {data.map((item) => (
         <article
           key={item.id}

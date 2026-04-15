@@ -6,6 +6,7 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Project tree](#project-tree)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -31,17 +32,87 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
+### Project tree
+
+```
+browser-extensions-manager-ui-main
+├─ components.json
+├─ eslint.config.js
+├─ index.html
+├─ jsconfig.json
+├─ package-lock.json
+├─ package.json
+├─ preview.jpg
+├─ public
+│  ├─ images
+│  │  ├─ favicon-32x32.png
+│  │  ├─ logo-console-plus.svg
+│  │  ├─ logo-devlens.svg
+│  │  ├─ logo-dom-snapshot.svg
+│  │  ├─ logo-grid-guides.svg
+│  │  ├─ logo-json-wizard.svg
+│  │  ├─ logo-link-checker.svg
+│  │  ├─ logo-markup-notes.svg
+│  │  ├─ logo-palette-picker.svg
+│  │  ├─ logo-speed-boost.svg
+│  │  ├─ logo-style-spy.svg
+│  │  ├─ logo-tab-master-pro.svg
+│  │  └─ logo-viewport-buddy.svg
+│  └─ vite.svg
+├─ README-template.md
+├─ README.md
+├─ src
+│  ├─ App.jsx
+│  ├─ assets
+│  │  ├─ design
+│  │  │  ├─ desktop-design-dark-active.jpg
+│  │  │  ├─ desktop-design-dark-focus.jpg
+│  │  │  ├─ desktop-design-dark-hover.jpg
+│  │  │  ├─ desktop-design-dark-inactive.jpg
+│  │  │  ├─ desktop-design-dark.jpg
+│  │  │  ├─ desktop-design-light-active.jpg
+│  │  │  ├─ desktop-design-light-focus.jpg
+│  │  │  ├─ desktop-design-light-hover.jpg
+│  │  │  ├─ desktop-design-light-inactive.jpg
+│  │  │  ├─ desktop-design-light.jpg
+│  │  │  ├─ mobile-design-dark.jpg
+│  │  │  └─ mobile-design-light.jpg
+│  │  ├─ fonts
+│  │  │  ├─ NotoSans-Italic-VariableFont_wdth,wght.ttf
+│  │  │  ├─ NotoSans-VariableFont_wdth,wght.ttf
+│  │  │  └─ static
+│  │  │     ├─ NotoSans-Bold.ttf
+│  │  │     ├─ NotoSans-Medium.ttf
+│  │  │     └─ NotoSans-Regular.ttf
+│  │  ├─ images
+│  │  │  ├─ icon-moon.svg
+│  │  │  ├─ icon-sun.svg
+│  │  │  └─ logo.svg
+│  │  └─ react.svg
+│  ├─ components
+│  │  ├─ extensions.jsx
+│  │  ├─ header.jsx
+│  │  ├─ themeToggle.jsx
+│  │  └─ ui
+│  │     └─ switch.jsx
+│  ├─ context
+│  │  ├─ appContext.jsx
+│  │  └─ themeContext.jsx
+│  ├─ data
+│  │  └─ data.json
+│  ├─ index.css
+│  ├─ lib
+│  │  └─ utils.js
+│  └─ main.jsx
+├─ style-guide.md
+├─ tailwind.config.js
+└─ vite.config.js
+
+```
+
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./Screenshot.jpg)
 
 ### Links
 
